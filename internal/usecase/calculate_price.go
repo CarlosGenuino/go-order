@@ -3,16 +3,16 @@ package usecase
 import "github.com/carlosgenuino/fieldservice/internal/entity"
 
 type OrderInput struct {
-	Id    string  `json: id`
-	Price float64 `json: price`
-	Tax   float64 `json: tax`
+	Id    string  `json:"id"`
+	Price float64 `json:"price"`
+	Tax   float64 `json:"tax"`
 }
 
 type OrderOutput struct {
-	Id         string  `json: id`
-	Price      float64 `json: price`
-	Tax        float64 `json: tax`
-	FinalPrice float64 `json: final_price`
+	Id         string  `json:"id"`
+	Price      float64 `json:"price"`
+	Tax        float64 `json:"tax"`
+	FinalPrice float64 `json:"final_price"`
 }
 
 type CalculateFinalPrice struct {
